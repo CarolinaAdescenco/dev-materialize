@@ -1,0 +1,290 @@
+$white: #ffffff;
+$black: #000;
+$cor-principal: #390843;
+$cor-secundaria: #733680;
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+.fab {
+    font-size: 1.75rem;
+    color: $white;
+    margin: 0 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    @media(min-width: 992px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.container {
+    @media(min-width: 993px) {
+        width: 80%;
+    }
+}
+
+@mixin btn_custom($color: $white, $background-color: $white) {
+    padding: 1rem 3rem;
+    border: 1px solid $color;
+    color: $color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.15rem;
+    width: 100%;
+
+    &:hover {
+        background-color: $background-color;
+        color: $cor-principal;
+    }
+}
+
+/* label color */
+.input-field label {
+    color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+
+
+.btn-custom {
+    @include btn_custom($white, $white);
+}
+
+nav.nav-extended {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: $cor-principal;
+}
+
+.nav-wrapper {
+
+    .brand-logo {
+        width: 20%;
+        padding: .5rem;
+    }
+
+    ul {
+        li {
+            &:hover {
+                background-color: $white;
+
+                a {
+                    color: $black;
+                }
+            }
+
+            a {
+                padding: 0.89rem 1.5rem;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+figure {
+    position: relative;
+    margin: 0;
+
+    figcaption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    &.parallax {
+        h1 {
+            text-align: center;
+            color: $white;
+            font-weight: 700;
+        }
+
+        h1 {
+
+            width: 80%;
+        }
+    }
+}
+
+.section-about {
+    margin: 2.5em auto;
+
+    h2 {
+        margin-top: 1rem;
+        color: $cor-secundaria;
+    }
+
+    .row {
+        .m4 {
+            border-right: 2px solid $cor-secundaria;
+            padding-right: 1rem;
+        }
+    }
+}
+
+.section-services {
+    margin: 2rem auto;
+
+    figcaption {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3 {
+            font-weight: 300;
+            color: $white;
+            margin-bottom: .5rem;
+            font-size: 2.5rem;
+        }
+
+        .btn-floating {
+            background-color: $cor-secundaria;
+
+            &:hover {
+                background-color: darken($cor-secundaria, 10);
+            }
+        }
+    }
+}
+
+.section-dealer {
+    background-color: $cor-secundaria;
+    padding: 2rem;
+
+    .m6 {
+        text-align: center;
+        background: $cor-principal;
+        padding: 3rem;
+        border-radius: 6rem 3rem 6rem 3rem;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: $white;
+    }
+
+    h3 {
+        color: $white;
+        font-weight: 300;
+    }
+
+    .btn-custom {
+        margin: 2rem 0;
+    }
+}
+
+.internal-banner {
+    &.parallax-container {
+        height: 250px;
+    }
+}
+
+.page-contact {
+    margin: 2rem auto;
+
+    .btn-custom {
+        @include btn_custom($cor-secundaria, $cor-principal);
+        background-color: transparent;
+
+        &:hover {
+            background-color: $cor-principal;
+            color: $white;
+        }
+    }
+}
+
+footer {
+    padding: 2rem;
+    background-color: $cor-principal;
+
+    h3,
+    p {
+        color: $white;
+    }
+
+    p {
+        font-weight: 300;
+        display: flex;
+        margin: .3rem;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .footer-copyright {
+        .container {
+            text-align: center;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+p {
+  font-size: 1.15rem; }
+
+.fab {
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin: 0 1rem; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    align-items: center; } }
+
+@media (min-width: 993px) {
+  .container {
+    width: 80%; } }
+
+/* label color */
+.input-field label {
+  color: #000; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000; }
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000; }
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000; }
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000; }
+
+.btn-custom {
+  padding: 1rem 3rem;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.15rem;
+  width: 100%; }
+  .btn-custom:hover {
+    background-color: #ffffff;
+    color: #390843; }
+
+nav.nav-extended {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #390843; }
+
+.nav-wrapper .brand-logo {
+  width: 20%;
+  padding: .5rem; }
+.nav-wrapper ul li:hover {
+  background-color: #ffffff; }
+  .nav-wrapper ul li:hover a {
+    color: #000; }
+.nav-wrapper ul li a {
+  padding: 0.89rem 1.5rem;
+  font-size: 1.25rem; }
+
+figure {
+  position: relative;
+  margin: 0; }
+  figure figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 1rem; }
+  figure.parallax h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700; }
+  figure.parallax h1 {
+    width: 80%; }
+
+.section-about {
+  margin: 2.5em auto; }
+  .section-about h2 {
+    margin-top: 1rem;
+    color: #733680; }
+  .section-about .row .m4 {
+    border-right: 2px solid #733680;
+    padding-right: 1rem; }
+
+.section-services {
+  margin: 2rem auto; }
+  .section-services figcaption {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between; }
+    .section-services figcaption h3 {
+      font-weight: 300;
+      color: #ffffff;
+      margin-bottom: .5rem;
+      font-size: 2.5rem; }
+    .section-services figcaption .btn-floating {
+      background-color: #733680; }
+      .section-services figcaption .btn-floating:hover {
+        background-color: #53275c; }
+
+.section-dealer {
+  background-color: #733680;
+  padding: 2rem; }
+  .section-dealer .m6 {
+    text-align: center;
+    background: #390843;
+    padding: 3rem;
+    border-radius: 6rem 3rem 6rem 3rem; }
+    .section-dealer .m6 img {
+      width: 60%; }
+  .section-dealer h2 {
+    font-size: 2.5rem;
+    color: #ffffff; }
+  .section-dealer h3 {
+    color: #ffffff;
+    font-weight: 300; }
+  .section-dealer .btn-custom {
+    margin: 2rem 0; }
+
+.internal-banner.parallax-container {
+  height: 250px; }
+
+.page-contact {
+  margin: 2rem auto; }
+  .page-contact .btn-custom {
+    padding: 1rem 3rem;
+    border: 1px solid #733680;
+    color: #733680;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.15rem;
+    width: 100%;
+    background-color: transparent; }
+    .page-contact .btn-custom:hover {
+      background-color: #390843;
+      color: #390843; }
+    .page-contact .btn-custom:hover {
+      background-color: #390843;
+      color: #ffffff; }
+
+footer {
+  padding: 2rem;
+  background-color: #390843; }
+  footer h3,
+  footer p {
+    color: #ffffff; }
+  footer p {
+    font-weight: 300;
+    display: flex;
+    margin: .3rem; }
+  footer .social {
+    text-align: center; }
+  footer .footer-copyright .container {
+    text-align: center;
+    color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
